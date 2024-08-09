@@ -16,9 +16,7 @@ const PaginaPrincipal = () => {
         <Nosotros />
         <Contacto />
         <Pie />
-        {/* 
         
-         */}
     </div>
   )
 }

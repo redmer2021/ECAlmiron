@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 const Pie = () => {
     return (
         <>
-            <div className="h-[420px] grid md:grid-cols-2 gap-4 p-4">
+            <div className="h-[420px] grid md:grid-cols-2">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0590685123925!2d-58.47959962350253!3d-34.627947558779496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc992526c1d61%3A0xc5f6e1b37dbe24b!2sAv.%20Avellaneda%203350%2C%20C1407EJN%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1723134391286!5m2!1ses!2sar"

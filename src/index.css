@@ -11,8 +11,3 @@
     background-size: cover;
     background-image: url('../src/assets/Img/bg_banner_dark.png');
 }
-
-.active {
-    border-bottom: 2px solid #23DE81; /* Cambia a tu color preferido */
-    color: #23DE81; /* Cambia a tu color preferido */
-}

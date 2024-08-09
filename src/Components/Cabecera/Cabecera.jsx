@@ -36,8 +36,8 @@ const Cabecera = () => {
 
     return (
         <>
-            <div className="bg-white h-[53px] flex justify-between items-center w-screen">
-                <div className="container mx-auto flex justify-between">
+            <div className="bg-white py-4">
+                <div className="px-6 md:px-16 lg:w-[90%] xl:w-[85%] mx-auto flex justify-between items-center">
                     <div>
                         <div className="hidden md:flex items-center">
                             <div className="flex items-center">
@@ -59,9 +59,49 @@ const Cabecera = () => {
                     </div>
                 </div>
             </div>
+            <div className="bg-black py-4">
+
+                <div className="hidden px-6 md:px-16 lg:w-[90%] xl:w-[85%] mx-auto md:flex justify-between items-center">
+                    <div>
+                        <img className="h-[4rem] w-[4rem] rounded-full" src={logo} alt="" />
+                    </div>
+                    <ul className="flex space-x-6">
+                        <Link to='/'><li className="transition-all duration-300 hover:border-b-2 border-mi_verde hover:text-mi_verde font-Roboto text-white text-[20px]">Inicio</li></Link> 
+                        {showMenus && <HashLink smooth to='#seccNosotros'><li className="transition-all duration-300 hover:border-b-2 border-mi_verde hover:text-mi_verde font-Roboto text-white text-[20px]">Nosotros</li></HashLink>}
+                        {showMenus && <Link to='/servicios'><li className="transition-all duration-300 hover:border-b-2 border-mi_verde hover:text-mi_verde font-Roboto text-white text-[20px]">Servicios</li></Link>}
+                        {showMenus && <HashLink smooth to='#seccContactos'><li className="transition-all duration-300 hover:border-b-2 border-mi_verde hover:text-mi_verde font-Roboto text-white text-[20px]">Contacto</li></HashLink>}
+                    </ul>
+                </div>
+
+                <div className="px-6 mx-auto flex justify-between md:hidden items-center">
+
+                    {menuOpen ? (
+                        <MdCancel size={30} color="white" onClick={toggleMenu} />
+                    ) : (
+                        <TiThMenu size={30} color="white" onClick={toggleMenu} />
+                    )}
+
+                    <div>
+                        <img className="h-[2rem] w-[2rem] rounded-full" src={logo} alt="" />
+                    </div>
+                    
+                </div>
+                {menuOpen && (
+                <div className="md:hidden mb-2">
+                    <ul className="flex flex-col space-y-1 mt-2 px-2">
+                        <Link to='/' onClick={closeMenu}><li className="rounded-md p-2 bg-gray-400 font-Roboto text-white text-[15px]">Inicio</li></Link>
+                        {showMenus && <HashLink smooth to='#seccNosotros' onClick={closeMenu}><li className="rounded-md p-2 bg-gray-400 font-Roboto text-white text-[15px]">Nosotros</li></HashLink>}
+                        {showMenus && <Link to='/servicios' onClick={closeMenu}><li className="rounded-md p-2 bg-gray-400 font-Roboto text-white text-[15px]">Servicios</li></Link>}
+                        {showMenus && <HashLink smooth to='#seccContactos' onClick={closeMenu}><li className="rounded-md p-2 bg-gray-400 font-Roboto text-white text-[15px]">Contacto</li></HashLink>}
+                    </ul>
+                </div>
+            )}
+
+            </div>
             
-            <div className="bg-black px-4 h-[50px] md:h-[96px] flex items-center">
-                <div className="hidden container mx-auto md:flex justify-between items-center">
+
+            {/* <div className="bg-black px-4 h-[50px] md:h-[96px] flex items-center">
+                <div className="hidden px-6 md:px-16 lg:w-[90%] xl:w-[85%] mx-auto md:flex justify-between items-center">
                     <div>
                         <img className="h-[4rem] w-[4rem] rounded-full" src={logo} alt="" />
                     </div>
@@ -97,7 +137,8 @@ const Cabecera = () => {
                         {showMenus && <HashLink smooth to='#seccContactos' onClick={closeMenu}><li className="rounded-md p-2 bg-gray-400 font-Roboto text-white text-[15px]">Contacto</li></HashLink>}
                     </ul>
                 </div>
-            )}            
+            )} */}
+
         </>
     )
 }
