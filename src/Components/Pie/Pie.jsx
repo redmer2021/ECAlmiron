@@ -3,6 +3,7 @@ import { AiFillMail } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const Pie = () => {
     return (
@@ -26,11 +27,22 @@ const Pie = () => {
             </div>
             <div className="h-[218px] bg-black flex flex-col justify-center items-center">
                 <div className="flex justify-center space-x-4 md:space-x-8 mb-4">
-                    <FaFacebookF size={30} color="#23DE81" />
-                    <FaYoutube size={30} color="#23DE81" />
-                    <FaInstagram size={30} color="#23DE81" />
-                    <AiFillMail size={30} color="#23DE81" />
+                    <a href="https://www.facebook.com/estudiocontablealmiron/" target="blank" className="hover:scale-125">
+                        <FaFacebookF size={30} color="#23DE81" />
+                    </a>
+                    <a href="https://www.instagram.com/estudiocontablealmiron/?hl=es-la" target="blank" className="hover:scale-125">
+                        <FaInstagram size={30} color="#23DE81" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCHkub6nkfFrlzQjHv_5fJRQ?view_as=subscriber" target="blank" className="hover:scale-125">
+                        <FaYoutube size={30} color="#23DE81" />
+                    </a>
+
+                    <HashLink smooth to='#seccContactos'>
+                        <AiFillMail size={30} color="#23DE81" />
+                    </HashLink>
+                    
                     <FaPhone size={30} color="#23DE81" />
+
                 </div>
                 <div>
                     <p className="font-Roboto text-white text-center px-4">Copyright © 2020 Estudio Contable Almiron | Todos los Derechos Reservados</p>

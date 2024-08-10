@@ -24,10 +24,10 @@ const Servicios = () => {
     return (
         <>
 
-            <div className="h-[417px] relative"> 
+            <div className="relative pt-[8.4rem] h-[65vh] md:h-[100vh]"> 
                 <img className="h-full w-full object-cover" src={nosotros} alt="Banner" />
-                <div className="container absolute inset-0 flex items-center">
-                    <p className="mb-6 font-Playfair text-[3rem] text-white text-center max-w-[80%] mx-auto">Servicios</p>
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="md:mb-6 font-Playfair text-[3rem] text-white max-w-[80%]">Servicios</p>
                 </div>
 
                 <div className='bg-[#EAEAEA] py-[4rem] mb-[5rem]'>
@@ -36,7 +36,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Estudio
                                     </Box>
                                 <AccordionIcon />
@@ -61,7 +61,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Consultoría
                                     </Box>
                                     <AccordionIcon />
@@ -87,7 +87,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Asesoría financiera
                                     </Box>
                                     <AccordionIcon />
@@ -111,7 +111,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Área de inversión
                                     </Box>
                                     <AccordionIcon />
@@ -134,7 +134,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Informes
                                     </Box>
                                     <AccordionIcon />
@@ -158,7 +158,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Resguardo patrimonial
                                     </Box>
                                     <AccordionIcon />
@@ -180,7 +180,7 @@ const Servicios = () => {
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
-                                    <Box className="font-Playfair text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
+                                    <Box className="font-Playfair md:text-[1.5rem] font-bold" as='span' flex='1' textAlign='left'>
                                         Coaching
                                     </Box>
                                     <AccordionIcon />

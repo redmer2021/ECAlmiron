@@ -11,3 +11,7 @@
     background-size: cover;
     background-image: url('../src/assets/Img/bg_banner_dark.png');
 }
+
+header {
+    height: 459px; /* Ajusta según tu diseño */
+  }
