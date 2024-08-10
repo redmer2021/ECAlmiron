@@ -24,10 +24,10 @@ const Servicios = () => {
     return (
         <>
 
-            <div className="relative pt-[8.4rem] h-[65vh] md:h-[100vh]"> 
+            <div className="relative pt-[8.4rem] h-[65vh]"> 
                 <img className="h-full w-full object-cover" src={nosotros} alt="Banner" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="md:mb-6 font-Playfair text-[3rem] text-white max-w-[80%]">Servicios</p>
+                <div className="absolute inset-0 px-6 md:px-32 lg:w-[90%] xl:w-[85%] mx-auto flex items-center justify-center md:justify-start">
+                    <p className="md:mb-6 font-Playfair text-[3rem] text-white md:text-[4rem] max-w-[80%]">Servicios</p>
                 </div>
 
                 <div className='bg-[#EAEAEA] py-[4rem] mb-[5rem]'>

@@ -3,7 +3,6 @@ import { AiFillMail } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { HashLink } from "react-router-hash-link";
 
 const Pie = () => {
     return (
@@ -37,9 +36,9 @@ const Pie = () => {
                         <FaYoutube size={30} color="#23DE81" />
                     </a>
 
-                    <HashLink smooth to='#seccContactos'>
+                    {/* <HashLink smooth to='#seccContactos'>
+                    </HashLink> */}
                         <AiFillMail size={30} color="#23DE81" />
-                    </HashLink>
                     
                     <FaPhone size={30} color="#23DE81" />
 
