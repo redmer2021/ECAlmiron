@@ -1,4 +1,4 @@
-import nosotros from "../../assets/Img/bg_section_dark.png"
+import nosotros from "../../assets/Img/img-mision-inicio.png"
 
 const Nosotros = () => {
     return (

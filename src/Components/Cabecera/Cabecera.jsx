@@ -68,7 +68,7 @@ const Cabecera = () => {
                 </div>
 
                 <div className="bg-black py-4">
-
+                    {/* Menú en pantallas grandes */}
                     <div className="hidden px-6 md:px-16 lg:w-[90%] xl:w-[85%] mx-auto md:flex justify-between items-center">
                         <div>
                             <img className="h-[4rem] w-[4rem] rounded-full" src={logo} alt="" />
@@ -81,6 +81,7 @@ const Cabecera = () => {
                         </ul>
                     </div>
 
+                    {/* Menú en pantallas pequeñas */}
                     <div className="px-6 mx-auto flex justify-between md:hidden items-center">
 
                         {menuOpen ? (
@@ -95,15 +96,15 @@ const Cabecera = () => {
                         
                     </div>
                     {menuOpen && (
-                    <div className="md:hidden mb-2 pb-4">
-                        <ul className="flex flex-col space-y-1 mt-2 px-7">
-                            <Link to='/' onClick={closeMenu}><li className="pb-2 border-b-[1px] font-Roboto text-white text-[15px]">Inicio</li></Link>
-                            {showMenus && <ScrollLink to="seccNosotros" smooth={true} offset={-115} duration={500} ><li onClick={closeMenu} className="cursor-pointer pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Nosotros</li></ScrollLink>}
-                            {showMenus && <Link to='/servicios' onClick={closeMenu}><li className="pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Servicios</li></Link>}
-                            {showMenus && <ScrollLink to="seccContactos" smooth={true} offset={140} duration={500}><li onClick={closeMenu} className="cursor-pointer pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Contacto</li></ScrollLink>}
-                        </ul>
-                    </div>
-                )}
+                        <div className="md:hidden mb-2 pb-4">
+                            <ul className="flex flex-col space-y-1 mt-2 px-7">
+                                <Link to='/' onClick={closeMenu}><li className="pb-2 border-b-[1px] font-Roboto text-white text-[15px]">Inicio</li></Link>
+                                {showMenus && <ScrollLink to="seccNosotros" smooth={true} offset={-130} duration={500} ><li onClick={closeMenu} className="cursor-pointer pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Nosotros</li></ScrollLink>}
+                                {showMenus && <Link to='/servicios' onClick={closeMenu}><li className="pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Servicios</li></Link>}
+                                {showMenus && <ScrollLink to="seccContactos" smooth={true} offset={-115} duration={500}><li onClick={closeMenu} className="cursor-pointer pb-2 pt-2 border-b-[1px] font-Roboto text-white text-[15px]">Contacto</li></ScrollLink>}
+                            </ul>
+                        </div>
+                    )}
 
                 </div>
             </nav>

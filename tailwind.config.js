@@ -13,10 +13,7 @@ export default {
         colors: {
             mi_verde: "#23DE81",
             mi_gris: "#EAEAEA",
-        },
-        backgroundImage: {
-            'imgBanner': "url('./src/assets/Img/bg_banner_dark.png')",
-          }
+        }
     },
   },
   plugins: [],

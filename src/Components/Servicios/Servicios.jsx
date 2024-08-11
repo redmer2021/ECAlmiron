@@ -1,4 +1,4 @@
-import nosotros from "../../assets/Img/bg_section_dark.png"
+import nosotros from "../../assets/Img/img-banner-servicios.png"
 
 import {
     Accordion,
@@ -24,13 +24,13 @@ const Servicios = () => {
     return (
         <>
 
-            <div className="relative pt-[8.4rem] h-[65vh]"> 
+            <div className="relative md:pt-[9.9rem] h-[65vh]"> 
                 <img className="h-full w-full object-cover" src={nosotros} alt="Banner" />
-                <div className="absolute inset-0 px-6 md:px-32 lg:w-[90%] xl:w-[85%] mx-auto flex items-center justify-center md:justify-start">
-                    <p className="md:mb-6 font-Playfair text-[3rem] text-white md:text-[4rem] max-w-[80%]">Servicios</p>
+                <div className="absolute inset-0 px-6 md:px-32 lg:w-[90%] xl:w-[85%] mx-auto flex flex-col justify-center mt-[4rem]">
+                    <p className="font-Playfair text-[2rem] text-white mt-[3rem] md:text-[4rem] max-w-[80%]">Servicios</p>
                 </div>
 
-                <div className='bg-[#EAEAEA] py-[4rem] mb-[5rem]'>
+                <div className='bg-[#EAEAEA] py-[2rem] md:py-[4rem] mb-[5rem]'>
                     <div className="container mx-auto">
                         <Accordion className="bg-white shadow-lg shadow-gray-600 rounded-lg mx-4" allowToggle>
                             <AccordionItem>
