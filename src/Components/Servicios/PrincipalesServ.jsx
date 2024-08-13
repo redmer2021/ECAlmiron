@@ -3,7 +3,6 @@ import coaching from "../../assets/Img/img_coaching.png"
 import asesoria from "../../assets/Img/img_asesoria.png"
 import FichaServ from "./FichaServ"
 
-
 const PrincipalesServ = () => {
   return (
     <>
