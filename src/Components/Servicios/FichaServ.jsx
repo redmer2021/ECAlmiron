@@ -17,12 +17,12 @@ const FichaServ = ({varImg, titulo, descrip}) => {
 
             <div className="md:h-[40%] flex flex-col justify-between px-8 pb-4">
                 <h3 className="text-center mt-4 font-Playfair font-semibold text-[1.5rem] md:text-[2rem]">{titulo}</h3>
-                <p className="text-center mb-4" >{descrip}</p>
+                {/* <p className="text-center mb-4" >{descrip}</p> */}
                 <button className='bg-[#19b567] hover:bg-[#329e68] hover:cursor-pointer px-8 py-2 text-center transition-all duration-300 tracking-widest rounded-md text-white font-medium font-Roboto' onClick={onOpenModal}>VER MAS</button>
             </div>
 
 
-            {/* Ventana Modal */}
+            {/* Ventana Modal  */}
             <div className={`fixed z-10 inset-0 overflow-y-auto ${verModal ? 'block' : 'hidden'}`}>
                 <div className="flex items-center justify-center min-h-screen"> 
                     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
