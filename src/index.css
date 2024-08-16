@@ -15,3 +15,7 @@
 header {
     height: 459px; /* Ajusta según tu diseño */
   }
+
+.no-scroll {
+    overflow: hidden;
+}

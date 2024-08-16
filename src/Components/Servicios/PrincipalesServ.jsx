@@ -1,16 +1,15 @@
-import consultoria from "../../assets/Img/img_consultoria.png"
-import coaching from "../../assets/Img/img_coaching.png"
-import asesoria from "../../assets/Img/img_asesoria.png"
-import FichaServ from "./FichaServ"
+import FichaServ_1 from "./FichaServ_1"
+import FichaServ_2 from "./FichaServ_2"
+import FichaServ_3 from "./FichaServ_3"
 
 const PrincipalesServ = () => {
   return (
     <>
         <div className="px-6 md:px-16 lg:w-[90%] xl:w-[85%] mx-auto grid md:grid-cols-3 gap-6 md:gap-14 mt-8 md:my-[8rem]">
 
-            <FichaServ varImg={consultoria} titulo='Consultoría' descrip='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, odio' />
-            <FichaServ varImg={coaching} titulo='Coaching' descrip='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, odio' />
-            <FichaServ varImg={asesoria} titulo='Asesoría' descrip='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, odio' />
+            <FichaServ_1 />
+            <FichaServ_2 />
+            <FichaServ_3 />
 
         </div>
     </>
