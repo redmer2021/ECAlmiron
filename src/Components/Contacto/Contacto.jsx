@@ -5,15 +5,16 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser"
 import { Alert, AlertIcon } from "@chakra-ui/react";
 import useForm from "../../hooks/useForm";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 
 const Contacto = () => {
 
     const [error, setError] = useState({})
 
-    const serviceId = 'service_apldhaf'
-    const templateId = 'template_iy8ddwa'
-    const apiKey = 'vWiF-36zcLPLEg-GI'
+    const serviceId = 'service_s8o9fxj'
+    const templateId = 'template_9ybz20l'
+    const apiKey = 's_FSVgxWBpVqVyx0v'
 
     const [alertVisible, setAlertVisible] = useState(false);
 
@@ -82,24 +83,29 @@ const Contacto = () => {
                    
                     <div className="flex items-center mb-4">
                         <FaPhone color="#23DE81" className="mr-2" />
-                        <span className="font-Roboto text-[13px] md:text-[15px]">(011) 4746 - 5854</span>                        
+                        <span className="font-Roboto text-[13px] md:text-[15px]">(011)4746-5854</span>
+                    </div>
+
+                    <div className="flex items-center mb-4">
+                        <IoLogoWhatsapp size={20} color="#23DE81" className="mr-2" />
+                        <span className="font-Roboto text-[13px] md:text-[15px]">(011)3776-4955</span>
                     </div>
 
                     <div className="flex items-center mb-6">
                         <AiFillMail size={23} color="#23DE81" className="mr-2" />
-                        <span className="font-Roboto text-[13px] md:text-[15px]">info@estudiocontablealmiron.com</span>                        
+                        <span className="font-Roboto text-[13px] md:text-[15px]">info@estudiocontablealmiron.com</span>
                     </div>
                     
                     <h4 className="font-Roboto font-bold text-[20px] mb-4">OFICINAS</h4>
 
                     <div className="flex items-center mb-4">
                         <FaLocationDot size={23} color="#23DE81" className="mr-2" />
-                        <span className="font-Roboto text-[13px] md:text-[15px]">Av. Avellaneda 3350, Bs. As.</span>                        
+                        <span className="font-Roboto text-[13px] md:text-[15px]">Av. Avellaneda 3350, Bs. As. - San Fernando</span>                        
                     </div>
 
                     <div className="flex items-center">
                         <FaLocationDot size={23} color="#23DE81" className="mr-2" />
-                        <span className="font-Roboto text-[13px] md:text-[15px]">Av. del Golf 610, Bs. As.</span>                        
+                        <span className="font-Roboto text-[13px] md:text-[15px]">Av. del Golf 610, Bs. As. - Nordelta</span>
                     </div>
 
                 </div>            

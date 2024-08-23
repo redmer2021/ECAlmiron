@@ -35,13 +35,6 @@ const Pie = () => {
                     <a href="https://www.youtube.com/channel/UCHkub6nkfFrlzQjHv_5fJRQ?view_as=subscriber" target="blank" className="hover:scale-125">
                         <FaYoutube size={30} color="#23DE81" />
                     </a>
-
-                    {/* <HashLink smooth to='#seccContactos'>
-                    </HashLink> */}
-                        <AiFillMail size={30} color="#23DE81" />
-                    
-                    <FaPhone size={30} color="#23DE81" />
-
                 </div>
                 <div>
                     <p className="font-Roboto text-white text-center px-4">Copyright © 2020 Estudio Contable Almiron | Todos los Derechos Reservados</p>

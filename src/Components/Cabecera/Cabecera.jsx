@@ -10,12 +10,17 @@ import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { Link as ScrollLink } from 'react-scroll';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Cabecera = () => {
 
     const location = useLocation();
     const [showMenus, setShowMenus] = useState(true);
     const [menuOpen, setMenuOpen] = useState(false);
+    const nroCelular = '37764955'
+    const msgWS = 'Hola, necesito hacer una consulta...'
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${nroCelular}&text=${msgWS}`;
+
 
     useEffect(() => {
         if (location.pathname === '/servicios') {
@@ -41,12 +46,13 @@ const Cabecera = () => {
                         <div>
                             <div className="hidden md:flex items-center">
                                 <div className="flex items-center">
-                                    <FaPhone color="#23DE81" className="mr-2" />
-                                    <span className="mr-8 Roboto">(011) 4746 - 5854</span>                        
+                                    <FaPhone color="#23DE81" className="mr-1" />
+                                    <span className="mr-1 Roboto">(011)4746-5854</span> 
+                                    <IoLogoWhatsapp size={23} color="#23DE81" className="mr-1" /> <span className="mr-1">(011)3776-4955</span>
                                 </div>
                         
                                 <div className="flex items-center">
-                                    <AiFillMail size={23} color="#23DE81" className="mr-2" />
+                                    <AiFillMail size={23} color="#23DE81" className="ml-8 mr-1" />
                                     <span className="mr-8 font-Roboto">info@estudiocontablealmiron.com</span>                        
                                 </div>
                             </div>
@@ -63,6 +69,8 @@ const Cabecera = () => {
                             <a href="https://www.youtube.com/channel/UCHkub6nkfFrlzQjHv_5fJRQ?view_as=subscriber" target="blank" className="hover:scale-125">
                                 <FaYoutube size={30} color="#23DE81" />
                             </a>
+
+
                         </div>
                     </div>
                 </div>
@@ -108,6 +116,10 @@ const Cabecera = () => {
 
                 </div>
             </nav>
+
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="z-50 fixed bottom-4 right-4 rounded-full p-2 shadow-lg hover:bg-gray-100">
+                <IoLogoWhatsapp size={30} color="#23DE81" />
+            </a>
 
         </>
     )
